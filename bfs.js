@@ -6,6 +6,7 @@ function bfs(graph, root) {
     // Object.assign({i: Infinity}, nodesLen);
     nodesLen[i] = Infinity;
   }
+  console.log(nodesLen);
   nodesLen[root] = 0;
 
   let queue = [];

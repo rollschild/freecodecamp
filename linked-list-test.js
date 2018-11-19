@@ -1,0 +1,13 @@
+// let LinkedList = require("./singly-linked-list.js");
+let LinkedList = require("./linked-list-doubly.js");
+let linkedList = new LinkedList();
+linkedList.add(2037);
+linkedList.add(-1);
+linkedList.add(9);
+linkedList.add(12);
+linkedList.add(0);
+console.log(linkedList.size());
+linkedList.print();
+linkedList.remove(9);
+console.log(linkedList.size());
+linkedList.print();

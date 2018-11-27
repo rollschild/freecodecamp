@@ -1,0 +1,13 @@
+let MinHeap = require('./heap-sort-min-version.js');
+let minHeap = new MinHeap();
+minHeap.insert(13);
+minHeap.insert(-1);
+minHeap.insert(44);
+minHeap.insert(0);
+minHeap.insert(44);
+minHeap.insert(-22);
+minHeap.insert(2037);
+minHeap.insert(13);
+minHeap.insert(9);
+let arr = minHeap.sort();
+console.log(arr);

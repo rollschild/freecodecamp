@@ -10,6 +10,7 @@ var array = new Array(); // a decent way???
   array.push(+(Math.random() * 100).toFixed(0));
   return size > 1 ? createArray(size - 1) : undefined;
 })(25);
+console.log(array);
 var MinHeap = function() {
   // change code below this line
   let heap = [];

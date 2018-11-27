@@ -7,4 +7,5 @@ function nonMutatingSort(arr) {
   
   // Add your code above this line
 }
-nonMutatingSort(globalArray);
+console.log(nonMutatingSort(globalArray));
+console.log(globalArray);

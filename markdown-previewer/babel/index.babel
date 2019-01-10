@@ -1,0 +1,37 @@
+"use strict";
+function update() {
+  $("#editor").on("keyup", function() {
+    let text = $("#editor").val();
+    // let text = $("#editor").attr("value");
+    $("#preview").html(marked(text, {breaks: true, gfm: true}));
+  });
+}
+
+function place() {
+  let placeholder = 
+`# Markdown  
+## Edit
+[link]("https://duckduckgo.com/")   
+\`printf("Hello, world!\n");\`  
+\`\`\`  
+console.log("try block of code");
+console.log("is it working?");
+\`\`\`  
+
+1. list item one  
+2. list item two  
+
+> bloqckquote hooray!  
+
+![I see you](https://images.techhive.com/images/article/2015/07/linus-torvalds-jet-100597317-primary.idge.jpg)  
+
+__the end__  `;
+  $("#editor").val(placeholder);
+  // let content = $("#editor").val();
+  $("#preview").html(marked(placeholder, {breaks: true, gfm: true}));
+}
+
+$(document).ready(function() {
+  place();
+  update();
+});

@@ -1,0 +1,23 @@
+.container-fluid {
+  text-align: center;
+  font-size: 16px;
+}
+
+#editor {
+  text-align: left;
+  width: 500px;
+  height: 200px;
+}
+
+#preview {
+  padding: 0px;
+}
+
+#wrapper {
+  width: auto;
+  border: 1px solid #d0d0d0;
+  margin: auto;
+  padding: auto;
+  word-wrap: normal;
+  text-align: left;
+}
